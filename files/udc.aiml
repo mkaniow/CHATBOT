@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Niestety nie wiem</template>
+  </category>
+  
+  <category>
+      <pattern>WITAM</pattern>
+      <template>Witam na Wrocławskim lotnisku. W czym mogę pomóc?</template>
+  </category>
+  
+  <category>
+      <pattern>DZIEŃ DOBRY</pattern>
+      <template>Witam na Wrocławskim lotnisku. W czym mogę pomóc?</template>
+  </category>
+  
+  <category>
+      <pattern>* MOGĘ POLECIEĆ</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+  
+  <category>
+      <pattern>* MOGĘ POLECIEĆ *</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+  
+  <category>
+      <pattern>* MOGĘ * POLECIEĆ</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+  
+  <category>
+      <pattern>MOGĘ * POLECIEĆ *</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+  
+  <category>
+      <pattern>MOGĘ POLECIEĆ *</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+  
+  <category>
+      <pattern>DOKĄD *</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+
+  <category>
+      <pattern>* DOKĄD *</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+
+  <category>
+      <pattern>CZY * DO *</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+  
+  <category>
+      <pattern>* CZY * DO *</pattern>
+      <template>Z naszego lotniska można kupić bilet na najbliższy lot krajowy do Warszawy, Krakowa, Poznania, Katowic, Łodzi, Gdańska, Bydgoszczy, Rzeszowa, Szczecina i Zielonej Góry</template>
+  </category>
+  
+  <category>
+      <pattern>* POPROSZĘ BILET * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ BILET * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* POPROSZĘ * BILETY * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ * BILETY * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* POPROSZĘ * BILETÓW * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ * BILETÓW * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* KUPIĆ BILET * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* ZAKUPIĆ BILET * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* KUPIĆ * BILETY * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* ZAKUPIĆ * BILETÓW * NASTĘPNY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+
+
+
+
+
+  <category>
+      <pattern>* POPROSZĘ BILET * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ BILET * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* POPROSZĘ * BILETY * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ * BILETY * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* POPROSZĘ * BILETÓW * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ * BILETÓW * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* KUPIĆ BILET * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* ZAKUPIĆ BILET * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* KUPIĆ * BILETY * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* ZAKUPIĆ * BILETÓW * LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+
+
+
+
+
+
+
+
+
+
+<category>
+      <pattern>* POPROSZĘ BILET * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ BILET * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* POPROSZĘ * BILETY * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ * BILETY * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* POPROSZĘ * BILETÓW * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>POPROSZĘ * BILETÓW * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* KUPIĆ BILET * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* ZAKUPIĆ BILET * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="3"/></set></think>
+          <think><set name = "topic">bilet</set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* KUPIĆ * BILETY * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* ZAKUPIĆ * BILETÓW * NAJBLIŻSZY LOT DO *</pattern>
+      <template>
+          <think><set name = "miejscowosc"><star index="4"/></set></think>
+          <think><set name = "topic">bilety</set></think>
+          <think><set name = "ilosc"><star index="2"/></set></think>
+          
+          <condition name = "miejscowosc" value = "Warszawy">Najbliższy lot do Warszawy będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Poznania">Najbliższy lot do Poznania będzie za 3 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Krakowa">Najbliższy lot do Krakowa będzie za pół godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Katowic">Najbliższy lot do Katowic będzie za 4 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Łodzi">Najbliższy lot do Łodzi będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Gdańska">Najbliższy lot do Gdańska będzie za 7 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Bydgoszczy">Najbliższy lot do Bydgoszczy będzie za 6 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Rzeszowa">Najbliższy lot do Rzeszowa będzie za 1,5 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Szczecina">Najbliższy lot do Szczecina będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+          <condition name = "miejscowosc" value = "Zielonej Góry">Najbliższy lot do Zielonej Góry będzie za 2 godziny. W jakiej klasie ma być bilet? Pierwsza, biznes czy ekonomiczna?</condition>
+      </template>
+  </category>
+
+  
+  <topic name="bilet">
+      <category>
+          <pattern>PIERWSZA</pattern>
+          <template>To będzie 600 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>BIZNES</pattern>
+          <template>To będzie 400 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>EKONOMICZNA</pattern>
+          <template>To będzie 200 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+    <topic name="bilet">
+      <category>
+          <pattern>* PIERWSZA</pattern>
+          <template>To będzie 600 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* BIZNES</pattern>
+          <template>To będzie 400 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* EKONOMICZNA</pattern>
+          <template>To będzie 200 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+    <topic name="bilet">
+      <category>
+          <pattern>* PIERWSZA *</pattern>
+          <template>To będzie 600 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* BIZNES *</pattern>
+          <template>To będzie 400 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* EKONOMICZNA *</pattern>
+          <template>To będzie 200 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>PIERWSZA *</pattern>
+          <template>To będzie 600 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>BIZNES *</pattern>
+          <template>To będzie 400 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>EKONOMICZNA *</pattern>
+          <template>To będzie 200 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* PIERWSZEJ</pattern>
+          <template>To będzie 600 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* BIZNESOWEJ</pattern>
+          <template>To będzie 400 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* EKONOMICZNEJ</pattern>
+          <template>To będzie 200 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* PIERWSZEJ *</pattern>
+          <template>To będzie 600 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* BIZNESOWEJ *</pattern>
+          <template>To będzie 400 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* EKONOMICZNEJ *</pattern>
+          <template>To będzie 200 złotych. Kartą czy gotówką?</template>
+      </category>
+  </topic>
+  
+
+  
+  <topic name="bilety">
+      <category>
+          <pattern>PIERWSZA</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>PIERWSZA *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* PIERWSZA *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* PIERWSZA</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* PIERWSZEJ</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* PIERWSZEJ *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 2400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 3000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>BIZNES</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>BIZNES *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* BIZNES *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* BIZNES</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* BIZNESOWEJ</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* BIZNESOWEJ *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 1200 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 1600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 2000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>EKONOMICZNA</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>EKONOMICZNA *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* EKONOMICZNA *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* EKONOMICZNA</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* EKONOMICZNEJ</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* EKONOMICZNEJ *</pattern>
+          <template>
+              <condition name= "ilosc" value = "2">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "dwa">To będzie 400 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "3">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "trzy">To będzie 600 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "4">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "cztery">To będzie 800 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "5">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+              <condition name= "ilosc" value = "pięć">To będzie 1000 złotych. Kartą czy gotówką?</condition>
+          </template>
+      </category>
+  </topic>
+
+  <topic name="bilet">
+      <category>
+          <pattern>* SIĘ RÓŻNIĄ</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+
+  <topic name="bilet">
+      <category>
+          <pattern>* SIĘ RÓŻNIĄ *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* SIĘ * RÓŻNIĄ</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+
+  <topic name="bilet">
+      <category>
+          <pattern>* SIĘ * RÓŻNIĄ *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* RÓŻNIĄ SIĘ</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* RÓŻNIĄ SIĘ *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+
+  <topic name="bilety">
+      <category>
+          <pattern>* SIĘ RÓŻNIĄ</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+
+  <topic name="bilety">
+      <category>
+          <pattern>* SIĘ RÓŻNIĄ *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* SIĘ * RÓŻNIĄ</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+
+  <topic name="bilety">
+      <category>
+          <pattern>* SIĘ * RÓŻNIĄ *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* RÓŻNIĄ SIĘ</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* RÓŻNIĄ SIĘ *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* JEST RÓŻNICA</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* JEST RÓŻNICA *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>JEST RÓŻNICA *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* JEST * RÓŻNICA</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>JEST * RÓŻNICA</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>JEST * RÓŻNICA *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* JEST * RÓŻNICA *</pattern>
+          <template>Klasy ekonomiczna, biznesowa i pierwsza różnią się stopniem wygody foteli i obsługą na pokładzie. Najlepsza jest klasa pierwsza, później jest biznesowa i na końcu ekonomiczna. Oczywiście ma to wpływ na cenę</template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>KARTĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* KARTĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>KARTĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>* KARTĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>GOTÓWKĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+
+  <topic name="bilety">
+      <category>
+          <pattern>* GOTÓWKĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilety">
+      <category>
+          <pattern>GOTÓWKĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+
+  <topic name="bilety">
+      <category>
+          <pattern>* GOTÓWKĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>KARTĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* KARTĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>KARTĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>* KARTĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Już można zbliżyć kartę do terminala. Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>GOTÓWKĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+
+  <topic name="bilet">
+      <category>
+          <pattern>* GOTÓWKĄ</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+  
+  <topic name="bilet">
+      <category>
+          <pattern>GOTÓWKĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+
+  <topic name="bilet">
+      <category>
+          <pattern>* GOTÓWKĄ *</pattern>
+          <template>
+              <condition name = "miejscowosc" value = "Warszawy">Dziękuję i życzę udanego pobytu w Warszawie</condition>
+              <condition name = "miejscowosc" value = "Krakowa">Dziękuję i życzę udanego pobytu w Krakowie</condition>
+              <condition name = "miejscowosc" value = "Katowic">Dziękuję i życzę udanego pobytu w Katowicach</condition>
+              <condition name = "miejscowosc" value = "Łodzi">Dziękuję i życzę udanego pobytu w Łodzi</condition>
+              <condition name = "miejscowosc" value = "Gdańska">Dziękuję i życzę udanego pobytu w Gdańsku</condition>
+              <condition name = "miejscowosc" value = "Poznania">Dziękuję i życzę udanego pobytu w Poznaniu</condition>
+              <condition name = "miejscowosc" value = "Bydgoszczy">Dziękuję i życzę udanego pobytu w Bydgoszczy</condition>
+              <condition name = "miejscowosc" value = "Szczecina">Dziękuję i życzę udanego pobytu w Szczecinie</condition>
+              <condition name = "miejscowosc" value = "Rzeszowa">Dziękuję i życzę udanego pobytu w Rzeszowie</condition>
+              <condition name = "miejscowosc" value = "Zielonej Góry">Dziękuję i życzę udanego pobytu w Zielonej Górze</condition>
+          </template>
+      </category>
+  </topic>
+
+  <category>
+      <pattern>DO WIDZENIA</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>* DO WIDZENIA</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>DO WIDZENIA *</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>* DO WIDZENIA *</pattern>
+      <template>Do widzenia</template>
+  </category>
+  
+  <category>
+      <pattern>DO ZOBACZENIA</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>* DO ZOBACZENIA</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>DO ZOBACZENIA *</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>* DO ZOBACZENIA *</pattern>
+      <template>Do widzenia</template>
+  </category>
+  
+  <category>
+      <pattern>ŻEGNAM</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>* ŻEGNAM</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>ŻEGNAM *</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+  <category>
+      <pattern>* ŻEGNAM *</pattern>
+      <template>Do widzenia</template>
+  </category>
+
+
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
+</aiml>
